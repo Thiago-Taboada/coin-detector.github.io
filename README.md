@@ -4,7 +4,7 @@ Este é um projeto de detecção de moedas em imagens implementado na versão we
 
 # Descrição do Projeto
 
-O objetivo deste projeto é criar uma ferramenta que possa detectar moedas em imagens e calcular o valor total das moedas na imagem. A detecção das moedas é feita utilizando técnicas de processamento de imagem e aprendizado de máquina.
+O objetivo deste projeto é criar uma ferramenta que possa detectar moedas em imagens e calcular o valor total das moedas na imagem. A detecção das moedas é feita utilizando técnicas de processamento de imagem e aprendizado de máquina. No momento o projeto so reconhece o formato BRL (Real).
 
 # Acesse ao projeto
 
