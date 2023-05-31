@@ -17,6 +17,7 @@ header{
     padding: 20px 0;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 header .container{
@@ -34,7 +35,7 @@ header .sub-container{
 }
 header .sub-container .logo{
     display: flex;
-    font-size: 28px;
+    font-size: 30px;
     margin: auto;
     align-items: center;
 }
@@ -45,10 +46,11 @@ header .sub-container .logo img{
 header .sub-container .items{
     display: flex;
     justify-content: flex-end;
+    gap: 20px;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
 }
-header .sub-container .items a{
+header .sub-container .items .item_home{
     background: #2c9986;
     color: #fff;
     padding: 10px 20px;
@@ -60,8 +62,13 @@ header .sub-container .items a{
     text-decoration: none;
 }
 
-header .sub-container .items a:hover {
-    background: #3dbca7;
+header .sub-container .items .item_nb{
+    text-decoration: none;
+}
+
+header .sub-container .items .item_nb:hover {
+    text-decoration: underline;
+    filter: brightness(120%);
 }
 
 
@@ -79,6 +86,12 @@ header .sub-container .items a:hover {
     color: #292c38;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.result img{
+    border: none;
 }
 
 
@@ -106,7 +119,7 @@ input:disabled {
 .btn:focus {
     outline: none;
 }
-.btn:hover, .btn_primary:hover {
+.btn:hover, .btn_primary:hover, header .sub-container .items .item_home:hover {
     filter: brightness(120%);
 }
 
@@ -124,6 +137,14 @@ input:disabled {
 
 .select_file, .select_format{
     margin: 20px 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 /* for medium screen */
