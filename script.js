@@ -91,7 +91,7 @@ var getSettingsFromForm = function (cb) {
 	};
 
 	var parts = [
-		"https://detect.roboflow.com/moedas-pmfos/9?api_key=52ZPGjDntv3smMG4Yr7b&confidence=80&overlap=10&format=image&labels=on&stroke=2"
+		"https://detect.roboflow.com/moedas-pmfos/9?api_key=52ZPGjDntv3smMG4Yr7b&confidence=80&overlap=10&format=image&labels=on&stroke=1"
 	];
 
 	var format = $('#format .active').attr('data-value');
@@ -143,8 +143,8 @@ var resizeImage = function (base64Str) {
 		img.src = base64Str;
 		img.onload = function () {
 			var canvas = document.createElement("canvas");
-			var MAX_WIDTH = 1500;
-			var MAX_HEIGHT = 1500;
+			var MAX_WIDTH = 600;
+			var MAX_HEIGHT = 600;
 			var width = img.width;
 			var height = img.height;
 			if (width > height) {
