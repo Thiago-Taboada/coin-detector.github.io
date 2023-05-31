@@ -91,7 +91,7 @@ var getSettingsFromForm = function (cb) {
 	};
 
 	var parts = [
-		"https://detect.roboflow.com/moedas-pmfos/9?api_key=52ZPGjDntv3smMG4Yr7b&confidence=70&overlap=30&format=image&labels=on&stroke=2"
+		"https://detect.roboflow.com/moedas-pmfos/9?api_key=52ZPGjDntv3smMG4Yr7b&confidence=80&overlap=10&format=image&labels=on&stroke=2"
 	];
 
 	var format = $('#format .active').attr('data-value');
