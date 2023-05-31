@@ -118,7 +118,7 @@ input:disabled {
     height: 40px;
 }
 
-.btn:focus {
+.btn:focus, .btn_primary:focus{
     outline: none;
 }
 .btn:hover, .btn_primary:hover, header .sub-container .items .item_home:hover {
