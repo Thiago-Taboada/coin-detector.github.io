@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Detecção de moedas</title>
+	<meta name="robots" content="noindex">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"></script>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9ded622906.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="sub-container">
+				<div class="logo">
+					<a href="index.html"><img src="coin.png" alt="Imagem de uma moeda"></a>
+					<h3>Detector de Moedas</h3>
+					 
+				</div>
+			</div>
+			<div class="sub-container">
+				<div class="items">
+					<a href="index.html">Home</a>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<form id="inputForm">
+		<div class="content">
+			<div class="formulario">
+				<div class="select_file" id="fileSelectionContainer">
+					<label class="input_label" for="file">Escolher arquivo</label>
+					<div>
+						<input class="input" type="text" id="fileName" placeholder="Inserir imagem aqui" disabled />
+						<button id="fileMock" class="btn active">Escolher</button>
+					</div>
+					<input style="display: none;" type="file" id="file" />
+				</div>
+				<div class="select_format" id="format">
+					<label class="input_label">Tipo de Resposta</label>
+					<div>
+						<button id="imageButton" data-value="image" class="btn active">Imagem</button>
+						<button id="jsonButton" data-value="json" class="btn">JSON</button>
+					</div>
+				</div>
+				</div>
+				<div class="col-12">
+					<button type="submit" value="Run Inference" class="btn_primary">Iniciar processo</button>
+				</div>
+			</div>
+			<div class="result" id="resultContainer">
+				<h3>Resultado</h3>
+				<pre id="output"/> json virá aqui </pre>
+			</div>
+		</div>
+	</form>
+	<script src="script.js" type="text/javascript"></script>
+</html>
